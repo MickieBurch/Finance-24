@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #06002E;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.nav-bar{
+  background-color: #06002E;
+
+}
+.navbar-logo{
+  color: white;
+  padding-left: 5%;
+}
+.navbar-nav .nav-link  {
+  color: white; /* Set the text color to white */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.active {
+  color: white; /* Change the text color */
+  background-color: purple; /* Change the background color */
+}
+
+
+
+/* Add new expenses page  */
+.page-btn {
+  background-color: #7a69e9;
+}
+
+div {
+  margin-top: 15px;
+}
+
+form {
+  text-align: center;
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 5vh;
+  border-color: grey;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+
+/* Landing page below */
+
+/* index.css */
+.landing-page-container {
+  height: 100vh;
+  background-image: url('./images/Landing_page.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+/* Button for landing page */
+.button-container button {
+  padding: 10px 50px;
+  font-size: 1rem;
+  background-color: #2A0DD5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #00C4CC;
+}
