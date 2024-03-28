@@ -1,7 +1,6 @@
 import React from "react";
 import '../index.css';
 import { Link } from "react-router-dom";
-import Navigation from "./nav";
 
 export default function LandingPage() {
   return (
@@ -10,10 +9,10 @@ export default function LandingPage() {
         <div className="row">
           <div className="col-md-12 text-center">
             <h1 className="intro-header">
-              Where your goals become reality
+            Finances Elevated, Goals Conquered.
             </h1>
             <div className="button-container">
-              <Link to="/signup">Start Now!</Link>
+              <Link to="/Home" className="linkButton">Learn More!</Link>
             </div>
           </div>
         </div>

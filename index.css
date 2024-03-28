@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #06002E;
+  background-color: #13072E;
   color: white;
 }
 
@@ -15,9 +15,18 @@ code {
 }
 
 
+/*NAV BAR STYLING */
 .nav-bar{
   background-color: #06002E;
-
+  border-radius:10rem;
+  border: 1px solid #5566B8;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  background-color: #262666;
 }
 .navbar-logo{
   color: white;
@@ -32,19 +41,31 @@ code {
 .navbar-nav .nav-link:active,
 .navbar-nav .nav-link.active {
   color: white; /* Change the text color */
-  background-color: purple; /* Change the background color */
+  background-color: #13072E; 
+  border-radius: 1rem;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-signup{
+  justify-content: space-between;
 }
 
 
+/*NAV BAR STYLING ENDS */
+
+
+/*ADD NEW EXPENSE FORM */
 
 /* Add new expenses page  */
 .page-btn {
   background-color: #7a69e9;
 }
 
-div {
-  margin-top: 15px;
-}
+
 
 form {
   text-align: center;
@@ -60,6 +81,9 @@ form {
   align-items: center;
   min-height: 75vh;
 }
+
+/* END OF STYING FOR EXPENSES PAGE */
+
 
 
 /* Landing page below */
@@ -85,7 +109,12 @@ form {
 }
 
 /* Button for landing page */
-.button-container button {
+
+.button-container button:hover {
+  background-color: #00C4CC;
+}
+
+.linkButton{
   padding: 10px 50px;
   font-size: 1rem;
   background-color: #2A0DD5;
@@ -93,9 +122,247 @@ form {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; 
+  text-decoration: none;
 }
 
-.button-container button:hover {
-  background-color: #00C4CC;
+/*END OF LADING PAGE */
+
+
+/*HOME PAGE STYLING */
+
+.homepage {
+  height: 100vh;
+  position: relative;
+  z-index: 0; /* Set z-index of homepage to be lower than navbar */
+}
+.homepage-elements {
+  background-image: url('../src/assets/images/Green and White Simple Landing Page Wireframe Website UI Prototype (1).png');
+  background-size: cover; /* Cover the entire container */
+  background-position: top right; /* Position the image to the top right */
+  position: absolute; /* Position the element relative to the homepage */
+  top: 0;
+  right: 0;
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Ensure full height */
+  z-index: -1;
+}
+
+/*categories styling */
+
+
+.categories-title {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-devider{
+  width: 70rem;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20rem;
+  height: 10rem;
+}
+
+.categorie-bubbles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  
+}
+
+.categorie-bubbles {
+  padding: 8px 16px;
+  border-radius:20rem;
+  border: 1px solid #5566B8;
+  margin: 10px;
+}
+
+
+/*CARDS FOR ARTICLES */
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.blog-border {
+  width: 25rem;
+  border: 1px solid #5566B8;
+  border-radius: 5%;
+  overflow: hidden;
+  position: relative;
+  margin: 1%;
+}
+
+.blog-container {
+  width: 100%;
+  position: relative;
+}
+
+.card-img-top {
+  max-width: none;
+  width: 100%; /* Ensures the image covers the entire width of the container */
+  height: 15rem; /* Set a specific height for all images */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the container */
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+.card-title{
+  font-size: large;
+}
+.card-text {
+  position: relative;
+  z-index: 1; /* Ensures text appears above the image */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.author-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*HOME PAGE STYLING ENDS */
+
+
+/*Signup page*/
+.signup-form {
+  height: 100vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #13072E;
+}
+
+
+.signin-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  width: 50%;
+}
+
+.img-signin {
+  /* Styles for your image */
+  background-image: url(../src/assets/images/Green\ and\ White\ Simple\ Landing\ Page\ Wireframe\ Website\ UI\ Prototype\ \(2\).png);
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  background-color: #13072E; 
+  color: grey;
+  padding: 0.5rem;
+  border: 1px solid #5566B8;
+}
+
+.form-control-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #13072E;
+  color: #fff; 
+  padding: 0 0.25rem; 
+  font-size: 0.75rem; 
+  transform: translate(0.5rem, -0.5rem); 
+}
+
+.form-control::placeholder {
+  color: grey; 
+}
+
+.signUp-button {
+  width: 20rem;
+  border-radius: 5rem;
+  padding: 1%;
+  margin-bottom: 2%;
+  background-color: #5A389D;
+  color: white;
+}
+
+.additional-options {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Google-login-button,
+.Login-button {
+  width: 20rem;
+}
+
+.Login-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*sign up page styling ends */
+
+
+/*login styling*/
+.login-border{
+  border: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.login-form{
+
+}
+
+/*footer */
+footer{
+  color: white;
+  width: 100%;
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
 }
